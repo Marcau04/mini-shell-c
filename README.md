@@ -8,9 +8,9 @@ El objetivo es comprender el funcionamiento interno de un intérprete de comando
 ## ⚙️ Funcionalidad
 
 El shell muestra un prompt personalizado:
-´´´bash
+```bash
 //>
-´´´
+```
 Y permite ejecutar los siguientes comandos:
 
 - **`salir`**  
@@ -39,4 +39,60 @@ Y permite ejecutar los siguientes comandos:
 ### Compilación
 ```bash
 gcc shell.c -o shell
-´´´
+```
+### Ejecución
+```bash
+./shell
+```
+El prompt quedará a la espera de comandos hasta que se introduzca salir.
+
+--- 
+
+## 📖 Ejemplo de uso
+
+```bash
+//> lista
+# muestra los ficheros del directorio actual
+
+//> muestra fichero.txt
+# muestra el contenido de fichero.txt
+
+//> copia origen.txt destino.txt
+# copia el contenido de origen.txt en destino.txt
+
+//> salir
+# termina la ejecución
+```
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- Lenguaje: C
+
+- Llamadas al sistema: fork, execvp, wait, read, write
+
+- Manejo dinámico de memoria con malloc y free
+
+---
+
+## ✨ Aprendizaje
+
+Este proyecto me permitió:
+
+- Comprender el funcionamiento básico de un shell.
+
+- Manejar procesos en C y la comunicación entre padre/hijo.
+
+- Usar execvp para delegar comandos a binarios del sistema.
+
+- Implementar parsing simple de entrada con strtok.
+
+- Practicar control de errores y validación de parámetros.
+
+---
+
+## 👤 Autores
+
+- Marcos Alonso Ulloa (@Marcau04)
+- Gonzalo Sánchez Maroto
